@@ -24,7 +24,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin:"https://quicklearnsproject.vercel.app/",
+		origin:"https://quicklearnsproject.vercel.app/(.*)",
 		credentials:true,
 	})
 )
